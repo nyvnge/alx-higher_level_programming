@@ -1,20 +1,18 @@
 #!/usr/bin/python3
-"""
-Add and save a add_item.json file
-"""
+"""add load & save a add_item ""JSON file"" """
 
-from sys import argv
-save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
-load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
+import sys
 
-filename = "add_item.json"
 
-try:
-    json_list = load_from_json_file(filename)
-except FileNotFoundError:
-    json_list = []
+if __name__ == "__main__":
 
-for arg in argv[1:]:
-    json_list.append(arg)
+    save = __import__('5-save_to_json_file').save_to_json_file
+    load = __import__('6-load_from_json_file').load_from_json_file
 
-save_to_json_file(json_list, filename)
+    try:
+        x_items = load("add_item.json")
+    except FileNotFoundError:
+        x_items = []
+
+    x_items.extend(sys.argv[1:])
+    save(x_items, "add_item.json")
