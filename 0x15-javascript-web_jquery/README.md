@@ -1,6 +1,6 @@
 # jQuery
 
-![jQuery Logo](https://commons.wikimedia.org/wiki/File:JQuery-Logo.svg)
+![jQuery Logo](https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg)
 
 jQuery is a fast and lightweight JavaScript library that simplifies web development by providing easy-to-use methods for interacting with HTML documents. It makes it effortless to navigate and manipulate the Document Object Model (DOM), handle events, create animations, and perform AJAX requests.
 
