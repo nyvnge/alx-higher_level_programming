@@ -8,4 +8,3 @@ class BaseGeometry:
     def area(self):
         """Raises a TypeError if called"""
         raise TypeError("area() is not implemented")
-
